@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PigGame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="PigGame.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player1 active-player">
+        <div class="player1-name">PLAYER 1</div>
+        <div class="player1-total" id="score-1">0</div>
+        <div class="player1-dashBoard">
+          <div class="player1-dashBoard-head">CURRENT</div>
+          <div class="player1-dashBoard-score" id="current-1">0</div>
+        </div>
+      </div>
+      <div class="player2 inActive-player">
+        <div class="player2-name">PLAYER 2</div>
+        <div class="player2-total" id="score-2">0</div>
+        <div class="player2-dashBoard">
+          <div class="player2-dashBoard-head">CURRENT</div>
+          <div class="player2-dashBoard-score" id="current-2">0</div>
+        </div>
+      </div>
+      <div class="new-game">🔁 NEW GAME</div>
+      <div class="roll-dice">🎲 ROLL DICE</div>
+      <div class="hold">🕹 HOLD</div>
+      <div class="rolled-dice hidden">
+        <img id="dice" src="images/dice2.png" alt="" />
+      </div>
+    </div>
+    <div class="winner hidden">WINNER WINNER CHICKEN DINNER🎉</div>
+    <script src="PigGame.js"></script>
+  </body>
+</html>

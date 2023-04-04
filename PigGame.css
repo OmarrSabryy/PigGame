@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "segoe UI";
+}
+html {
+  font-size: 62.5%;
+  background-color: #ac0e1b98;
+}
+.container {
+  display: flex;
+  margin: 5% 25%;
+  /* border: solid 0.1rem red; */
+  /* text-align: center; */
+  box-shadow: -0.5rem -0.5rem 0.6rem rgba(0, 0, 0, 0.192),
+    0.7rem 0.7rem 0.8rem rgba(0, 0, 0, 0.192);
+  border: none;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  position: relative;
+  cursor: default;
+}
+
+.container .player1 {
+  border: solid 0.1rem red;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 7.5%;
+  border: none;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.container .player1 .player1-name,
+.container .player2 .player2-name {
+  flex: 1;
+  border: solid 0.1rem blue;
+  margin: auto;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  border: none;
+}
+.container .player1 .player1-total,
+.container .player2 .player2-total {
+  flex: 1;
+  border: solid 0.1rem blue;
+  margin: auto;
+  font-size: 3rem;
+  margin-bottom: 7rem;
+  border: none;
+  color: #c44569;
+}
+.container .player1 .player1-dashBoard,
+.container .player2 .player2-dashBoard {
+  flex: 1;
+  border: solid 0.1rem blue;
+  margin: auto;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  color: white;
+  border: none;
+  background-color: #c44569b6;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.192);
+}
+.container .player1 .player1-dashBoard .player1-dashBoard-head,
+.container .player2 .player2-dashBoard .player2-dashBoard-head {
+  flex: 1;
+  margin: auto;
+  font-size: 1.2rem;
+}
+.container .player1 .player1-dashBoard .player1-dashBoard-score,
+.container .player2 .player2-dashBoard .player2-dashBoard-score {
+  flex: 1;
+  margin: auto;
+  font-size: 2rem;
+}
+.container .player2 {
+  border: solid 0.1rem red;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 7.5%;
+  border: none;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+.new-game {
+  position: absolute;
+  top: 5%;
+  right: 42.5%;
+  background-color: rgba(255, 255, 255, 0.788);
+  width: 15%;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.192);
+}
+.roll-dice {
+  position: absolute;
+  position: absolute;
+  bottom: 25%;
+  right: 42.5%;
+  background-color: rgba(255, 255, 255, 0.788);
+  width: 15%;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.192);
+}
+.hold {
+  position: absolute;
+  bottom: 13%;
+  right: 44.5%;
+  background-color: rgba(255, 255, 255, 0.788);
+  width: 11%;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.192);
+}
+.rolled-dice {
+  position: absolute;
+  right: 45.5%;
+  top: 35%;
+  background-color: white;
+  width: 5.5rem;
+  height: 5.5rem;
+  box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.192);
+}
+.hidden {
+  display: none;
+}
+.active-player {
+  background-color: #ebd2d6a8;
+}
+.inActive-player {
+  background-color: #ff4f8c83;
+}
+.winner {
+  position: absolute;
+  background-color: white;
+  width: 20%;
+  height: 50%;
+  top: 25%;
+  right: 40%;
+}
+.finish {
+  background-color: #3d3d3d;
+  color: #c44569;
+}
